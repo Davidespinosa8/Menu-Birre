@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+<--- Proceso de formacion --->
 
-Template Name: Delicious
-Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+--- Se utiliza esta plantilla de prueba para futuros usos de metodos y formas ---
+
+25/12 - Se modifica Modal emergente -
