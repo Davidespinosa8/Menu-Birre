@@ -26,6 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style-2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Delicious
@@ -239,30 +240,14 @@
       </div>
     </section><!-- End Whu Us Section -->
 
-    <!-- ======= Modal ======= -->
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Plato Seleccionado</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="#" alt="Plato Seleccionado" id="modalImage" style="width: 100%;">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- ======= Menu Section ======= -->
     <section id="menu" class="menu">
       <div class="container">
+
         <div class="section-title">
           <h2>Check our tasty <span>Menu</span></h2>
         </div>
+
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
@@ -275,18 +260,10 @@
         </div>
 
         <div class="row menu-container">
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Bread barrel</a><span>$6.95</span>
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content" data-bs-toggle="modal" data-bs-target="#Lobster">
+              <a href="#!">Lobster Bisque</a><span>$5.95</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -295,16 +272,16 @@
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Crab Cake</a><span>$7.95</span>
+              <a href="#">Crab Cake</a><span>$7.95</span>
             </div>
             <div class="menu-ingredients">
               A delicate crab cake served on a toasted roll with lettuce and tartar sauce
             </div>
           </div>
 
-          <div class="col-lg-6 menu-item filter-specialty">
+          <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Caesar Selections</a><span>$8.95</span>
+              <a href="#">Caesar Selections</a><span>$8.95</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -313,7 +290,7 @@
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Tuscan Grilled</a><span>$9.95</span>
+              <a href="#">Tuscan Grilled</a><span>$9.95</span>
             </div>
             <div class="menu-ingredients">
               Grilled chicken with provolone, artichoke hearts, and roasted red pesto
@@ -322,7 +299,7 @@
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Mozzarella Stick</a><span>$4.95</span>
+              <a href="#">Mozzarella Stick</a><span>$4.95</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -331,7 +308,7 @@
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Greek Salad</a><span>$9.95</span>
+              <a href="#">Greek Salad</a><span>$9.95</span>
             </div>
             <div class="menu-ingredients">
               Fresh spinach, crisp romaine, tomatoes, and Greek olives
@@ -340,7 +317,7 @@
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Spinach Salad</a><span>$9.95</span>
+              <a href="#">Spinach Salad</a><span>$9.95</span>
             </div>
             <div class="menu-ingredients">
               Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
@@ -349,7 +326,7 @@
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#" data-toggle="modal" data-target="#myModal" onclick="showImage('/assets/img/food2.jpg')">Lobster Roll</a><span>$12.95</span>
+              <a href="#">Lobster Roll</a><span>$12.95</span>
             </div>
             <div class="menu-ingredients">
               Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
@@ -357,8 +334,20 @@
           </div>
 
         </div>
+
       </div>
-    </section>
+    </section><!-- End Menu Section -->
+
+<!-- image -->
+<div class="modal fade" id="Lobster" tabindex="-1" aria-labelledby="Lobster" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="/assets/img/food2.jpg" class="modal-img" alt="">
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- ======= Specials Section ======= -->
     <section id="specials" class="specials">
@@ -945,12 +934,6 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Modal Function -->
-  <script>
-    function showImage(imageSrc) {
-      document.getElementById('modalImage').src = imageSrc;
-    }
-  </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -960,6 +943,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Modal Js
+  <script type="text/javascript">
+		document.addEventListener("click",function (e){
+		  if(e.target.classList.contains("gallery-item")){
+		  	  const src = e.target.getAttribute("src");
+		  	  document.querySelector(".modal-img").src = src;
+		  	  const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+		  	  myModal.show();
+		  }
+		})
+	</script> -->
 
 </body>
 
